@@ -60,13 +60,15 @@
         </div>
     </section>
 
-    <article id="quienes_somos" class="container">
+    <article id="quienes_somos" class="container d-none d-md-block">
         <h1 class="text-center mt-3 mb-4">¿Quienes Somos?</h1>
         <hr class="bg-info my-4">
         <div class="row">
             <div class="col-md-4">
                 <div class="bg-info text-center text-light py-1 mb-3">
-                    <i class="fas fa-plane fa-2x"></i>
+                    <i class="fas fa-plane fa-2x" data-toggle="tooltip" button id="boton1" type="button" class="btn btn-secondary" data-toggle="tooltip"
+                    data-placement="bottom" title="Vuela con nosotros"></i>
+                    
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, dolorum ullam quae deleniti ducimus
                     nobis molestiae modi maxime, expedita soluta voluptates, vero earum inventore. Error reiciendis
@@ -90,13 +92,15 @@
                     voluptates autem! Illum architecto, incidunt a sint minima ratione rem. Nulla consequatur nihil
                     repellendus repudiandae porro cupiditate earum sapiente.</p>
                 <div class="bg-info text-center text-light py-1 mb-3">
-                    <i class="fas fa-mountain fa-2x"></i>
+                    <i class="fas fa-mountain fa-2x" data-toggle="tooltip" button id="boton1" type="button" class="btn btn-secondary" data-toggle="tooltip"
+                    data-placement="bottom" title="Descubre las montañas"></i>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="bg-info text-center text-light py-1 mb-3">
-                    <i class="fas fa-route fa-2x "></i>
+                    <i class="fas fa-route fa-2x " data-toggle="tooltip" button id="boton1" type="button" class="btn btn-secondary" data-toggle="tooltip"
+                    data-placement="bottom" title="Descubre nuevas rutas"></i>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, libero exercitationem! Aspernatur
                     voluptates itaque, odit quae suscipit mollitia eligendi sed doloribus! Beatae autem fugiat sed.
@@ -124,8 +128,8 @@
                 </div>
             </div>
 
-            <div class="card col-md-3 px-0  mt-2" style="width: 18rem;">
-                <img src="assets/img/card2.jpg" class="card-img-top" alt="card2.jpg">
+            <div class="card col-md-3 px-0 mt-2" style="width: 18rem;">
+                <img src="assets/img/card2.jpg" class="card-img-top" alt="card2.jpg" height="188.54px">
                 <div class="card-body bg-info">
                     <h5 class="card-title">Lorem ipsum, dolor sit amet consectetur </h5>
                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio adipisci
@@ -156,21 +160,37 @@
     <section id="contacto" class="container">
         <h1 class="text-center mt-3 mt-5">Contacto</h1>
         <hr class="bg-info mt-4">
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/i4qZQupD?typeform-medium=embed-snippet"
-            style="width: 100%; height: 500px;"></div>
-        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+        <div class="formulario mb-5">
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/i4qZQupD?typeform-medium=embed-snippet"
+                style="width: 100%; height: 500px;"></div>
+            <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })()</script>
+        </div>
     </section>
 
-    <Footer class="container-fluid bg-info  ">
-        <div class="row container">
-            <div class="col">
-            <h2 class="mb-0 ml-5 p-2">VIAJES CHILE</h2>
-        </div>
-            <div class="col">
-                <i class="fab fa-github-square fa-3x"></i>
-                <i class="fab fa-linkedin fa-3x"></i>
-                <i class="fab fa-twitter-square fa-3x"></i>
-                <i class="fab fa-facebook-square fa-3x"></i>
+
+    <Footer class="footer bg-info">
+        <div class="row ">
+            <div class="container justify-content-center">
+                <div class="col-md-6">
+                    <h2 class="my-3 ">VIAJES CHILE</h2>
+                </div>
+                <div class="col  my-2 d-flex ">
+                    <a class="nav-link active" href="https://github.com/" target="blank">
+                        <i class="fab fa-github-square fa-3x text-white"></i>
+                        <span class="sr-only">(current)</span></a>
+
+                    <a class="nav-link active" href="https://cl.linkedin.com/" target="blank">
+                        <i class="fab fa-linkedin fa-3x text-white"></i>
+                        <span class="sr-only">(current)</span></a>
+
+                    <a class="nav-link active" href="https://twitter.com/" target="blank">
+                        <i class="fab fa-twitter-square fa-3x text-white"></i>
+                        <span class="sr-only">(current)</span></a>
+
+                    <a class="nav-link active" href="https://www.facebook.com/" target="blank">
+                        <i class="fab fa-facebook-square fa-3x text-white"></i>
+                        <span class="sr-only">(current)</span></a>
+                </div>
             </div>
         </div>
     </Footer>
