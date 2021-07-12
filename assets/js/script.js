@@ -5,5 +5,6 @@ $(function () {
     $(".card-title").click(function () {
         $(".card-text").css("display", "none");
         
+    });
 
 })   
